@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.MainActivity">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/signuplogo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/fira_sans_medium"
+                android:text="Your Infos!"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update your information here"
+                android:fontFamily="@font/fira_sans"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/regName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/cm_edittext"
+                android:ems="10"
+                android:fontFamily="@font/fira_sans"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/textHintColor"
+                android:textCursorDrawable="@drawable/cm_cursor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/regMail"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cm_edittext"
+                android:ems="10"
+                android:fontFamily="@font/fira_sans"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/textHintColor"
+                android:textCursorDrawable="@drawable/cm_cursor"
+                app:layout_constraintEnd_toEndOf="@+id/regName"
+                app:layout_constraintStart_toStartOf="@+id/regName"
+                app:layout_constraintTop_toBottomOf="@+id/regName" />
+
+            <EditText
+                android:id="@+id/currentPass"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textCursorDrawable="@drawable/cm_cursor"
+                android:background="@drawable/cm_edittext"
+                android:ems="10"
+                android:fontFamily="@font/fira_sans"
+                android:hint="Current Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/textHintColor"
+                app:layout_constraintEnd_toEndOf="@+id/regMail"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/regMail"
+                app:layout_constraintTop_toBottomOf="@+id/regMail" />
+
+            <EditText
+                android:id="@+id/regPass"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textCursorDrawable="@drawable/cm_cursor"
+                android:background="@drawable/cm_edittext"
+                android:ems="10"
+                android:fontFamily="@font/fira_sans"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/textHintColor"
+                app:layout_constraintEnd_toEndOf="@+id/currentPass"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/currentPass"
+                app:layout_constraintTop_toBottomOf="@+id/currentPass" />
+
+
+
+            <Button
+                android:id="@+id/regBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/cm_bg"
+                android:drawableRight="@drawable/right_arrow"
+                android:drawableTint="@color/white"
+                android:paddingHorizontal="20dp"
+                android:text="Update Now"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/regPass"
+                app:layout_constraintStart_toStartOf="@+id/regPass"
+                app:layout_constraintTop_toBottomOf="@+id/regPass" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

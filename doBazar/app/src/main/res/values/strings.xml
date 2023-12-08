@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DoBazar</string>
+    <string name="tt">This is very best product.\nPlease buy this product now!</string>
+    <string name="t1">This is a Nashville Armchair With Saddle Arms</string>
+
+    <string name="openDrawer">Drawer Open</string>
+    <string name="closeDrawer">Drawer close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

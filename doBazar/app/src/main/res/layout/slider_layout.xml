@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        app:cardElevation="8dp"
+        android:outlineAmbientShadowColor="@color/textColor"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:layout_height="220dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLLECTION"
+                android:fontFamily="@font/fira_sans_light"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title1"
+                android:text="Title first"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/fira_sans_medium"
+                android:textSize="25sp"
+                android:layout_below="@id/cat1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title2"
+                android:text="Title Second"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fira_sans_medium"
+                android:textSize="25sp"
+                android:layout_below="@id/title1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="70dp"
+                android:layout_toLeftOf="@id/hlImg"
+                android:fontFamily="@font/fira_sans"
+                android:maxLines="2"
+                android:text="The offer of the product"
+                android:textColor="@color/textHintColor"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_below="@id/body"
+                android:orientation="vertical"
+                android:id="@+id/shopNowLayouts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHOP NOW"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fira_sans_light"
+                    android:textColor="@color/black"
+                    />
+
+                <View
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@color/textColor"
+                    />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/hlImg"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/sofa"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

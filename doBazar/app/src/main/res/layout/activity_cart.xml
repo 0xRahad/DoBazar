@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutNav"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CART"
+            android:textSize="15sp"
+            android:fontFamily="@font/fira_sans"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/layoutNav"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cartRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomLayout"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:background="@drawable/cm_btn_shape2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_below="@id/ttt"
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="৳2,000"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/buyNowBtn"
+            android:layout_centerVertical="true"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Buy Now"
+            android:textColor="@color/white"
+            android:background="@drawable/cm_bg"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/ttt"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

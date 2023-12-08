@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="170dp"
+        app:cardElevation="8dp"
+        android:clipToOutline="true"
+        android:outlineAmbientShadowColor="@color/textColor"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:layout_height="210dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:id="@+id/productImg"
+                android:src="@drawable/sofa"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/productTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productImg"
+                android:text="Nashville Armchair"
+                android:fontFamily="@font/fira_sans"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                />
+
+
+            <TextView
+                android:id="@+id/productDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productTitle"
+                android:text="@string/t1"
+                android:fontFamily="@font/fira_sans_light"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/textHintColor"
+                />
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productDesc"
+                android:text="$1000"
+                android:fontFamily="@font/fira_sans"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:maxLines="2"
+                android:layout_marginBottom="10dp"
+
+                />
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
