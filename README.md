@@ -42,4 +42,4 @@ The design was inspired by [Dribble](https://dribbble.com/shots/14303736-Furnitu
 
 
 ## Author
-@0xAdiyat
+@0xRahad
